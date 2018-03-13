@@ -9,7 +9,7 @@ MongoClient.connect('mongodb://localhost:27017/quotes', (err, database) => {
   if (err) return console.log(err)
   db = database
   app.listen(process.env.PORT || 3000, () => {
-    console.log('listening on 3000')
+    console.log('What It Look Like?!')
   })
 })
 
