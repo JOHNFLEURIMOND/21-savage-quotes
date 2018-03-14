@@ -27,16 +27,5 @@ No matter what my experience level, being an engineer means continuously learnin
 
 ## Usage
 
-1. run `npm todo`
-2. Navigate to `localhost:3000`
-
-
-## Installation
-
-1. Clone repo
-2. run `npm install`
-
-## Usage
-
 1. run `npm run savage`
 2. Navigate to `localhost:3000`
