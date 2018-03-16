@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>SuWOO </title>
+  <title>SuWOO</title>
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
@@ -20,8 +20,8 @@
       <li class="message">
         <span><%= messages[i].name %></span>
         <span><%= messages[i].msg %></span>
-        <span><%= messages[i].thumbUp %></span>
-        <span><%= messages[i].thumbDown %></span>
+        <span><%= messages[i].thumbUp - messages[i].thumbDown %></span>
+        <!-- <span><%= messages[i].thumbDown %></span> -->
         <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
         <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span>
         <span><i class="fa fa-trash" aria-hidden="true"></i></span>
@@ -36,6 +36,10 @@
     <input type="text" placeholder="message" name="msg">
     <button type="submit">Submit</button>
   </form>
+
+  <iframe style="width:0; height:0; border:0; border:none" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/337169064&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+
 
   <script src="main.js"></script>
 
