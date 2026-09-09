@@ -27,5 +27,10 @@ No matter what my experience level, being an engineer means continuously learnin
 
 ## Usage
 
-1. run `npm run savage`
-2. Navigate to `localhost:3000`
+1. Set `MONGODB_URI` in the server process environment using your database connection configuration. The server does not automatically load `.env` files; `.env.example` lists the required variable. Keep credentials out of Git and shell history.
+2. Run `npm run savage` for development or `npm start` for normal startup.
+3. Navigate to `localhost:3000`, or the port configured by `PORT`.
+
+## Configuration Tests
+
+Run `node --test test/server.test.js` with Node.js 18 or newer. These tests use a mocked database and do not require credentials or a running MongoDB server.

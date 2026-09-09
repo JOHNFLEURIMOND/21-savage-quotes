@@ -5,8 +5,15 @@ const MongoClient = require('mongodb').MongoClient
 
 var db
 
-MongoClient.connect('mongodb://localhost:27017/quotes', (err, database) => {
-  if (err) return console.log(err)
+const mongoUri = process.env.MONGODB_URI
+if (!mongoUri) throw new Error('MONGODB_URI is required')
+
+MongoClient.connect(mongoUri, (err, database) => {
+  if (err) {
+    console.error('MongoDB connection failed')
+    process.exitCode = 1
+    return
+  }
   db = database
   app.listen(process.env.PORT || 3000, () => {
     console.log('What It Look Like?!')
